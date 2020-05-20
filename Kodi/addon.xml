@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.iCH3F" version="1.0.0" name="iCH3F's Kodi Repository" provider-name="iCH3F">
+
+	<extension point="xbmc.addon.repository" name="iCH3F's Repository">
+		<info compressed="false">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi Repository for stable releases of iCH3F's Plugins</summary>
+		<description lang="en">Kodi Repository for stable versions of iCH3F's plugins.
+
+For beta versions and nightly releases please use my beta Repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>

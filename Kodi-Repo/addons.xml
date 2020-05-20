@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
 <addon id="repository.iCH3F" version="1.0.0" name="iCH3F's Repository" provider-name="iCH3F">
-	
+
 	<extension point="xbmc.addon.repository" name="iCH3F's Repository">
-		<info compressed="false">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.co/iCH3F/iCH3F.github.io/master/Kodi</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.co/iCH3F/iCH3F.github.io/master/Kodi-Repo</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi Repository for stable versions of iCH3F's Plugins</summary>
@@ -33,7 +33,7 @@ For beta versions and nightly releases please use my beta Repository.</descripti
     <extension point="xbmc.addon.metadata">
         <summary>Metadata and artwork from common sources like TMDB, IMDB, TADB and fanart.tv </summary>
         <description>
-            The metadata and artwork module for Kodi provides rich metadata, including artwork for 
+            The metadata and artwork module for Kodi provides rich metadata, including artwork for
             various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv.[CR][CR]
             This product uses the TMDb API but is not endorsed or certified by TMDb
         </description>
@@ -84,9 +84,9 @@ For beta versions and nightly releases please use my beta Repository.</descripti
                 <label>32023</label>
                 <description>PVR artwork Configuration</description>
                 <visible>
-                    !IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) + 
-                    [Window.IsActive(MyPVRChannels.xml) | 
-                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | 
+                    !IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
+                    [Window.IsActive(MyPVRChannels.xml) |
+                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
                     Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
                 </visible>
             </item>
@@ -94,7 +94,7 @@ For beta versions and nightly releases please use my beta Repository.</descripti
                 <label>32023</label>
                 <description>Music artwork Configuration</description>
                 <visible>
-                    !IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) + 
+                    !IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
                     [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
                 </visible>
             </item>
@@ -263,9 +263,9 @@ For beta versions and nightly releases please use my beta Repository.</descripti
              library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">A pure python module which implements the DES and Triple-DES encryption algorithms.</summary>
-    <website>http://twhiteman.netfirms.com/des.html</website> 
-    <license>MIT</license> 
-    <platform>all</platform> 
+    <website>http://twhiteman.netfirms.com/des.html</website>
+    <license>MIT</license>
+    <platform>all</platform>
     <source>http://sourceforge.net/projects/pydes/</source>
     <assets>
       <icon>icon.png</icon>
@@ -586,9 +586,9 @@ v1.2.2 (2020-05-07)
                 <label>32023</label>
                 <description>PVR artwork Configuration</description>
                 <visible>
-                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) + 
-                    [Window.IsActive(MyPVRChannels.xml) | 
-                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | 
+                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
+                    [Window.IsActive(MyPVRChannels.xml) |
+                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
                     Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
                 </visible>
             </item>
@@ -596,7 +596,7 @@ v1.2.2 (2020-05-07)
                 <label>32023</label>
                 <description>Music artwork Configuration</description>
                 <visible>
-                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) + 
+                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
                     [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
                 </visible>
             </item>
@@ -868,7 +868,7 @@ Lambdascraper for the TV Time Add-on!
        version="4.6.2"
        provider-name="Leonard Richardson (leonardr@segfault.org)">
   <requires>
-    <import addon="xbmc.python" 
+    <import addon="xbmc.python"
              version="2.25.0"/>
   </requires>
   <extension point="xbmc.python.module"
@@ -1116,9 +1116,9 @@ Watch all of your favourite cartoons!
   </extension>
 </addon>
 
-<addon id="script.module.metahandler" 
-     name="metahandler" 
-     version="2.9.0" 
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="2.9.0"
      provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
