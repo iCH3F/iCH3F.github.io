@@ -1,0 +1,158 @@
+
+<html>
+<head>
+<title>iCH3F's Release Pages</title>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+<link rel="icon"
+      type="image/png"
+      href="Images/Favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<style type="text/css">
+		body {
+			background: #007180; /* Old browsers */
+			background: -moz-linear-gradient(top,  #007180 0%, #cbddc8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007180), color-stop(100%,#cbddc8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #007180 0%,#cbddc8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007180', endColorstr='#cbddc8',GradientType=0 ); /* IE6-9 */
+			font-family: "Segoe UI Light", "Ubuntu", "Helvetica Neue Ultralight", "Calibri Light";
+			/*text-shadow: 1px 1px rgba(0,0,0,0.5);*/
+			overflow:hidden;
+		}
+		h1 {
+			font-weight: normal;
+		}
+		h3 {
+			font-weight: normal;
+		}
+		h4 {
+			font-weight: normal;
+		}
+		a {
+			text-decoration: none;
+		}
+		.bg-img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top:0px;
+			left:0px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		.blur {
+			-webkit-filter: blur(5px);
+			-moz-filter: blur(5px);
+			-o-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: blur(5px);
+		}
+		.overlay {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		</style>
+
+		<style>
+.button {
+  background-color: #333333;
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: circle;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+</style>
+
+<style>
+.button {
+padding: 0px 0px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #333333;
+border: none;
+border-radius: 40px;
+box-shadow: 0 6px #888888;
+}
+
+.button:hover {background-color: #333333}
+
+.button:active {
+background-color: #333333;
+box-shadow: 0 3px #555555;
+transform: translateY(3px);
+}
+</style>
+
+<script type="3ad1e01cdd4f119297987e54-text/javascript">
+		function swapBG(){
+			document.getElementById("bg-img").style.display="block";
+			document.getElementById("bg-img").style.backgroundImage="url('Images/Home-Wallpaper.jpg')";
+			document.getElementById("bg-overlay").style.display="block";
+			document.getElementById("ios").style.color="rgb(0,200,64)";
+			document.getElementById("chrome").style.color="rgb(255,91,0)";
+			document.body.style.color = "white";
+		}
+		function swapForURL(){
+			document.getElementById("logo").src="Images/Logo.png";
+			document.getElementById("logo").style.borderRadius="50px";
+			document.getElementById("bg-img").style.display="block";
+			document.getElementById("bg-img").style.backgroundImage="url('Images/Home-Wallpaper.jpg')";
+			document.getElementById("bg-overlay").style.display="block";
+			document.getElementById("ios").style.color="rgb(0,200,64)";
+			document.getElementById("chrome").style.color="rgb(255,91,0)";
+			document.body.style.color = "white";
+		}
+		function getLocation(href) {
+			var match = href.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/);
+			return match && {
+				protocol: match[1],
+				host: match[2],
+				hostname: match[3],
+				port: match[4],
+				pathname: match[5],
+				search: match[6],
+				hash: match[7]
+			}
+		}
+		</script>
+</head>
+<body scroll="no">
+<div id="bg-img" class="bg-img blur" style="display: none;"></div>
+<div id="bg-overlay" class="bg-img overlay" style="display: none;"></div>
+<div style="width: 100%; height: 100%;display: table;text-align: center;">
+<div style="position:relative;width:700px;height:500px;display: table-cell;vertical-align: middle; top: -7%;">
+<img id="logo" src="Images/Logo.png" width="420">
+<p>
+
+<span id="links">
+<button class="button"><a href="iOS/" id="ios" style="color:rgb(81, 166, 147);"><img src="Images/iOS.png" alt="iOS Repo" width="48" height="48"></a></button>  <button class="button"><a href="Kodi/" id="chrome" style="color:rgb(47, 150, 194);"><img src="Images/Kodi.png" alt="Kodi Repo" width="48" height="48"></a></button>  <button class="button"><a href="https://twitter.com/iCH3F" style="color:rgb(43, 98, 153);"><img src="Images/Twitter.png" alt="Twitter" width="48" height="48"></a></button>  <button class="button"><a href="https://www.reddit.com/user/iCH3F" style="color:rgb(43, 98, 153);"><img src="Images/Reddit.png" alt="Reddit" width="48" height="48"></a></button>  <button class="button"><a href="https://github.com/iCH3F" style="color:rgb(43, 98, 153);"><img src="Images/Github.png" alt="Github" width="48" height="48"></a></button>
+</div>
+</div>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3ad1e01cdd4f119297987e54-|49" defer=""></script></body>
+<script type="3ad1e01cdd4f119297987e54-text/javascript">
+		var urlObj = getLocation(document.documentURI);
+		if (urlObj.host.toLowerCase().indexOf("iCH3F.com") >= 0)
+			swapForURL();
+		else
+			swapBG();
+	</script>
+	<div style="position: absolute; right: 5px; bottom: 5px"><font size="1" color="grey"><i>&copy; 2020 iCH3F.  All Rights Reserved.</i>
+    </div>
+    <div style="position: fixed; left: 5px; bottom: 5px"><font size="1" color="grey"><i>BTC: 3GCKaQg3tC3wXm1gpsbA8mvfU5bVUXoeJg</i>
+      </div>
+
+</html>

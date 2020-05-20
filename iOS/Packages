@@ -1,0 +1,17 @@
+Package: com.muirey03.amandus
+Version: 1.0.1-2+debug
+Architecture: iphoneos-arm
+Maintainer: iCH3F
+Installed-Size: 96
+Depends: mobilesubstrate, ws.hbang.common
+Filename: ./debs/com.muirey03.amandus_1.0.1-2+debug_iphoneos-arm.deb
+Size: 13620
+MD5sum: d136351ba284d676466a6dacfbce9d74
+SHA1: b4d5f41c07a5c24ed9fe91f78c2037568aa58bfa
+SHA256: 5beebf7652d2919c3c2d9e3c5a920e144c1f9ba97f39108b58715b9f168397d9
+Section: Tweaks
+Description: Apple Pay Redesigned!
+Author: Muirey03 & iCH3F
+Depiction: https://iCH3F.github.io/iOS/depictions/?p=AmandusDepiction.json
+Name: AmandusRedux
+

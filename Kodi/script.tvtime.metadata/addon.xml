@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.tvtime.metadata" version="1.0.0" name="TV Time Metadata" provider-name="iCH3F">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		 <news>
+[COLOR light blue][B]TV Time Metadata[/B][/COLOR]
+[COLOR grey][I]by iCH3F[/I][/COLOR]
+
+
+[COLOR white][B][I]Changelog:[/B][/I][/COLOR]
+
+[COLOR blue][B]1.0.0:[/B][/COLOR]
+[COLOR grey]- Plugin name change[/COLOR]
+
+[COLOR blue][B]0.0.5:[/B][/COLOR]
+[COLOR grey]- Minor bug fixes[/COLOR]
+
+[COLOR blue][B]0.0.0beta:[/B][/COLOR]
+[COLOR grey]- Initial release[/COLOR]
+        </news>
+        <description lang="en">
+Metadata for your favourite media add-on!
+
+[I]Add-on by iCH3F[/I]
+        </description>
+        <platform lang="en">all</platform>
+        <disclaimer lang="en">[COLOR red]The creator of this Kodi add-on do not host any of the content found on this plugin, nor do they have any affiliation with the content providers or creators. This add-on purely scrapes web pages it is pointed towards.[/COLOR]</disclaimer>
+    </extension>
+</addon>

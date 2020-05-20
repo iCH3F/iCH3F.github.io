@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.openscrapers" name="TV Time OpenScrapers" version="1.0.0" provider-name="iCH3F">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <news>
+[COLOR purple][B]OpenScrapers for TV Time[/B][/COLOR]
+[COLOR grey][I]by iCH3F[/I][/COLOR]
+
+
+[COLOR white][B][I]Changelog:[/B][/I][/COLOR]
+
+[COLOR blue][B]1.0.0:[/B][/COLOR]
+[COLOR grey]- Initial release[/COLOR]
+        </news>
+        <description lang="en">
+OpenScrapers for the TV Time Add-On!
+
+[I]Add-on by iCH3F[/I]
+        </description>
+        <platform lang="en">all</platform>
+        <disclaimer lang="en">[COLOR red]The creator of this Kodi add-on do not host any of the content found on this plugin, nor do they have any affiliation with the content providers or creators. This add-on purely scrapes web pages it is pointed towards.[/COLOR]</disclaimer>
+    </extension>
+</addon>
