@@ -17,8 +17,6 @@
 			background: -ms-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* IE10+ */
 			background: linear-gradient(to bottom,  #007180 0%,#cbddc8 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007180', endColorstr='#cbddc8',GradientType=0 ); /* IE6-9 */
-      opacity: 1;
-      transition: 3s opacity;
       font-family: "Segoe UI Light", "Ubuntu", "Helvetica Neue Ultralight", "Calibri Light";
 			/*text-shadow: 1px 1px rgba(0,0,0,0.5);*/
 			overflow:hidden;
@@ -56,6 +54,18 @@
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 		</style>
+
+    <style>
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+</style>
 
     <style>
     @import url('https://iCH3F.github.io/Styles/style.css');
