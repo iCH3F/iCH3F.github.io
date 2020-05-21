@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Fonts/icomoon.eot?nfc05c');
-  src:  url('https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Fonts/icomoon.eot?nfc05c#iefix') format('embedded-opentype'),
-    url('https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Fonts/icomoon.ttf?nfc05c') format('truetype'),
-    url('https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Fonts/icomoon.woff?nfc05c') format('woff'),
-    url('https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Fonts/icomoon.svg?nfc05c#icomoon') format('svg');
+  src:  url('https://iCH3F.github.io/Fonts/icomoon.eot?nfc05c');
+  src:  url('https://iCH3F.github.io/Fonts/icomoon.eot?nfc05c#iefix') format('embedded-opentype'),
+    url('https://iCH3F.github.io/Fonts/icomoon.ttf?nfc05c') format('truetype'),
+    url('https://iCH3F.github.io/Fonts/icomoon.woff?nfc05c') format('woff'),
+    url('https://iCH3F.github.io/Fonts/icomoon.svg?nfc05c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
