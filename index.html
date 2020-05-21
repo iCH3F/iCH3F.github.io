@@ -17,7 +17,9 @@
 			background: -ms-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* IE10+ */
 			background: linear-gradient(to bottom,  #007180 0%,#cbddc8 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007180', endColorstr='#cbddc8',GradientType=0 ); /* IE6-9 */
-			font-family: "Segoe UI Light", "Ubuntu", "Helvetica Neue Ultralight", "Calibri Light";
+      opacity: 1;
+      transition: 1s opacity;
+      font-family: "Segoe UI Light", "Ubuntu", "Helvetica Neue Ultralight", "Calibri Light";
 			/*text-shadow: 1px 1px rgba(0,0,0,0.5);*/
 			overflow:hidden;
 		}
@@ -252,7 +254,7 @@ ul li:nth-child(6) a span::after {
 <div id="bg-overlay" class="bg-img overlay" style="display: none;"></div>
 <div style="width: 100%; height: 100%;display: table;text-align: center;">
 <div style="position:relative;width:700px;height:500px;display: table-cell;vertical-align: middle; top: 10%;">
-<img id="logo" onload="fadeIn" src="Images/NewLogo-Alt3.png" width="480">
+<img id="logo" src="Images/NewLogo-Alt3.png" width="480">
 <p>
 
 <p>
@@ -294,12 +296,9 @@ ul li:nth-child(6) a span::after {
 		else
 			swapBG();
 	</script>
-  <script>
-// this function must be defined in the global scope
-window.fadeIn = function(obj) {
-    $(obj).fadeIn(1000);
-}
-</script>
+
+  <script>document.body.className += 'fade-out';</script>
+
 	<div style="position: absolute; right: 5px; bottom: 5px"><font size="1" color="grey"><i>&copy; 2020 iCH3F.  All Rights Reserved.</i>
     </div>
     <div style="position: absolute; left: 5px; bottom: 5px"><font size="1" color="grey"><i>BTC: 3GCKaQg3tC3wXm1gpsbA8mvfU5bVUXoeJg</i>
