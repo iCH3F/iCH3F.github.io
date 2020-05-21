@@ -137,7 +137,7 @@ ul li a span::after {
     height: 100%;
     /* background: #fff;
     color: #262626; */
-    transform-origin: bottom, right;
+    transform-origin: bottom;
     transition: transform 0.95s;
     transform: rotateX(90deg) translateY(50%);
 }
@@ -252,7 +252,7 @@ ul li:nth-child(6) a span::after {
 <div id="bg-overlay" class="bg-img overlay" style="display: none;"></div>
 <div style="width: 100%; height: 100%;display: table;text-align: center;">
 <div style="position:relative;width:700px;height:500px;display: table-cell;vertical-align: middle; top: 10%;">
-<img id="logo" src="Images/NewLogo-Alt3.png" width="480">
+<img id="logo" onload="fadeIn" src="Images/NewLogo-Alt3.png" width="480">
 <p>
 
 <p>
@@ -294,6 +294,12 @@ ul li:nth-child(6) a span::after {
 		else
 			swapBG();
 	</script>
+  <script>
+// this function must be defined in the global scope
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+}
+</script>
 	<div style="position: absolute; right: 5px; bottom: 5px"><font size="1" color="grey"><i>&copy; 2020 iCH3F.  All Rights Reserved.</i>
     </div>
     <div style="position: absolute; left: 5px; bottom: 5px"><font size="1" color="grey"><i>BTC: 3GCKaQg3tC3wXm1gpsbA8mvfU5bVUXoeJg</i>
