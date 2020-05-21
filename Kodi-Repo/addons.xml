@@ -5,7 +5,7 @@
 	<extension point="xbmc.addon.repository" name="iCH3F's Repository">
 		<info compressed="false">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo</datadir>
+		<datadir zip="true">https://raw.githubusercontent.com/iCH3F/iCH3F.github.io/master/Kodi-Repo/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi Repository for stable versions of iCH3F's Plugins</summary>
