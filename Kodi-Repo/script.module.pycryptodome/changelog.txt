@@ -1,5 +1,0 @@
-3.4.1
-Bugfix
-
-3.4
-First Kodi repackage
