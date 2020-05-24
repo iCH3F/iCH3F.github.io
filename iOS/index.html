@@ -11,48 +11,84 @@
 
 <style>
 
-body {
-  background-color: #182028
-  opacity: 0;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s; /* Safari */
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
 }
 h1 {
-  font-weight: normal;
-  font-family: Quicksand;
-  font-size: 12px;
+  margin:20;
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  letter-spacing: -4px;
+  font-size:100px;
+  font-weight:700;
 }
-h3 {
-  font-weight: normal;
-  font-family: Quicksand;
-  font-size: 10px;
+header {
+  height: calc(100% - 65px);
+  background: #333;
+
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  perspective-origin: center bottom;
 }
-h4 {
-  font-weight: normal;
-}
-a {
-  text-decoration: none;
+.hero {
+  position:relative;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://iCH3F.github.io/Images/Home-Wallpaper.jpg") no-repeat center center;
+  background-size:cover;
+  height: 100%;
+  width:100%;
+
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  display:table;
 }
 
-</style>
-
-<style>
-
-@font-face {
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 400;
-src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot'); /* IE9 Compat Modes */
-src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+nav {
+  background:#333333;
+  height:65px;
 }
-
-</style>
-
-<style>
+nav.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+.sticky-wrapper {
+  height:65px;
+}
+nav ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+nav ul li {
+  display:inline-block;
+}
+nav ul a {
+  height:65px;
+  line-height:15px;
+  padding:0px 0px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+section {
+  height: 100%;
+  width:100%;
+  display:table;
+}
+section#item1 {
+  background:#006ca3;
+}
+section#item2 {
+  background:#00a69a;
+}
 
 .button {
   background-color: #333333;
@@ -73,739 +109,68 @@ src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot?#iefix')
 
 </style>
 
-<style>
-  .main_h {
-  position: fixed;
-  top: 0px;
-  max-height: 100px;
-  z-index: 999;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  background: none;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  top: 0px;
-  font-family: "Montserrat", sans-serif;
-}
-@media only screen and (max-width: 766px) {
-  .main_h {
-    padding-top: 0px;
-  }
-}
+<body>
 
-.open-nav {
-  max-height: 400px !important;
-}
-.open-nav .mobile-toggle {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-}
-
-.sticky {
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
-  border-bottom: 0px solid gainsboro;
-}
-
-.logo {
-  width: 50px;
-  font-size: 5px;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  float: left;
-  display: block;
-  margin-top: 5;
-  line-height: 1;
-  margin-bottom: -50px;
-}
-@media only screen and (max-width: 766px) {
-  .logo {
-    float: none;
-  }
-}
-
-nav {
-  float: right;
-  width: 60%;
-}
-@media only screen and (max-width: 766px) {
-  nav {
-    width: 100%;
-  }
-}
-nav ul {
-  list-style: none;
-  overflow: hidden;
-  text-align: right;
-  float: middle;
-}
-@media only screen and (max-width: 766px) {
-  nav ul {
-    padding-top: 10px;
-    margin-bottom: 10px;
-    float: left;
-    text-align: center;
-    width: 100%;
-  }
-}
-nav ul li {
-  display: inline-block;
-  margin-left: 0px;
-  line-height: 1.5;
-}
-@media only screen and (max-width: 766px) {
-  nav ul li {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-}
-nav ul a {
-  color: #888888;
-  text-transform: uppercase;
-}
-
-.mobile-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  right: 22px;
-  top: 0;
-  width: 30px;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-}
-@media only screen and (max-width: 766px) {
-  .mobile-toggle {
-    display: block;
-  }
-}
-.mobile-toggle span {
-  width: 30px;
-  height: 4px;
-  margin-bottom: 6px;
-  border-radius: 1000px;
-  background: #8f8f8f;
-  display: block;
-}
-
-.row {
-  width: 100%;
-  margin: -1;
-  position: relative;
-  padding: 0 2%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: #8f8f8f;
-  background: #182028;
-  font-family: "Cardo", serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.8;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-}
-
-p {
-  margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 2;
-}
-
-.content {
-  padding: 0px 2% 250px;
-}
-
-.hero {
-  position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://iCH3F.github.io/Images/Home-Wallpaper.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding-top: 150px;
-  min-height: 500px;
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-}
-.hero h1 {
-  font-size: 50px;
-  line-height: 1.3;
-}
-.hero h1 span {
-  font-size: 25px;
-  color: #e8f380;
-  border-bottom: 2px solid #e8f380;
-  padding-bottom: 12px;
-  line-height: 3;
-}
-
-.mouse {
-  display: block;
-  margin: 0 auto;
-  width: 26px;
-  height: 46px;
-  border-radius: 13px;
-  border: 2px solid #e8f380;
-  position: absolute;
-  bottom: 40px;
-  position: absolute;
-  left: 50%;
-  margin-left: -26px;
-}
-.mouse span {
-  display: block;
-  margin: 6px auto;
-  width: 2px;
-  height: 2px;
-  border-radius: 4px;
-  background: #e8f380;
-  border: 1px solid transparent;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-  animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-}
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-}
-
-</style>
-
-<body scroll="yes" onload="document.body.style.opacity='1'">
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-
-<header class="main_h">
-
-      <div class="row">
-          <a class="logo" href="https://iCH3F.github.io"><img src="https://iCH3F.github.io/Images/NewFavicon.png" width="45"></a>
-
-          <div class="mobile-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-
-          <nav>
-              <ul>
-                <li><button class="button"><a style="position: absolute; right:  236px" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToCydia-Dark.png" width="102"></a></button></li>
-                <li><button class="button"><a style="position: absolute; right: 124px" href="zbra://sources/add/https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToZebra-Dark.png" width="102"></a></button></li>
-                <li><button class="button"><a style="position: absolute; right:  12px" href="sileo://source/https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToSileo-Dark.png" width="102"></a></button></li>
-              </ul>
-          </nav>
-
-      </div>
-
+<header id="home">
+  <div class="hero">
+    <div class="overlay"></div>
+    <h1><img src="https://iCH3F.github.io/Images/NewLogo-Alt3.png" width="420"></h1>
+  </div>
 </header>
-
-<div class="hero">
-
-<img src="https://iCH3F.github.io/Images/NewLogo-Alt3.png" width= "450">
-
+<div class="sticky-wrapper">
+<nav>
+  <ul>
+    <li><button class="button"><a style="position: absolute; left: 15px" href="https://twitter.com/iCH3F"><img src="https://ich3f.github.io/Images/Twitter-Bare.png" height="34"></a></button></li>
+    <li><button class="button"><a style="position: absolute; left: 70px" href="https://reddit.com/iCH3F"><img src="https://ich3f.github.io/Images/Reddit-Bare.png" height="34"></a></button></li>
+    <li><button class="button"><a style="position: absolute; left: 125px" href="https://iCH3F.github.io/"><img src="https://ich3f.github.io/Images/Email-Bare.png" height="34"></a></button></li>
+    <li><button class="button"><a style="position: absolute; right: 236px" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iCH3F.github.io/"><img src="https://ich3f.github.io/Images/AddToCydia.png" width="102"></a></button></li>
+                <li><button class="button"><a style="position: absolute; right: 124px" href="zbra://sources/add/https://iCH3F.github.io/"><img src="https://ich3f.github.io/Images/AddToZebra.png" width="102"></a></button></li>
+                <li><button class="button"><a style="position: absolute; right:  12px" href="sileo://source/https://iCH3F.github.io/"><img src="https://ich3f.github.io/Images/AddToSileo.png" width="102"></a></button></li>
+  </ul>
+</nav>
 </div>
 
-  &nbsp;&nbsp;
-      <p>
-<h1 align=center><font colour=#000 size=16px>PROJECTS</font></h1>
-<p>
-  &nbsp;&nbsp;
-  <p>
-    &nbsp;&nbsp;
-    <p>
-      Test
-      <p>
-        Test
-        <p>
-          Test
-          <p>
-            Test
-            <p>
-              Test
-              <p>
-                Test
-                <p>
-                  Test
-                  <p>
-                    Test
-                    <p>
-                      Test
-                      <p>
-                        Test
-                        <p>
-                          Test
-                          <p>
-                            Test
-                            <p>
-                              Test
-                              <p>
-                                Test
-                                <p>
-                                  Test
-                                  <p>
-                                    Test
-                                    <p>
+<section id="item1">
+  <h1>Some section</h1>
+</section>
+<section id="item2">
+  <h1>Other section</h1>
+</section>
 
+      </body>
 
-
-
-</body>
-
-<div style="font-family:Quicksand; position: fixed; right: 5px; bottom: 5px"><font size="1" color="grey">
-
-<i>&copy; 2020 iCH3F.  All Rights Reserved.</i>
-
-</div>
-
-<div style="font-family:Quicksand; position: fixed; left: 5px; bottom: 5px"><font size="1" color="grey">
-
-<i>BTC: 3GCKaQg3tC3wXm1gpsbA8mvfU5bVUXoeJg</i>
-
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
-  // Sticky Header
-  $(window).scroll(function() {
 
-      if ($(window).scrollTop() > 100) {
-          $('.main_h').addClass('sticky');
-      } else {
-          $('.main_h').removeClass('sticky');
-      }
-  });
+$(window).scroll(function() {
+  var heroHeight = $('header').height();
+  var yPosition = $(document).scrollTop();
 
-  // Mobile Navigation
-  $('.mobile-toggle').click(function() {
-      if ($('.main_h').hasClass('open-nav')) {
-          $('.main_h').removeClass('open-nav');
-      } else {
-          $('.main_h').addClass('open-nav');
-      }
-  });
 
-  $('.main_h li a').click(function() {
-      if ($('.main_h').hasClass('open-nav')) {
-          $('.navigation').removeClass('open-nav');
-          $('.main_h').removeClass('open-nav');
-      }
-  });
+  if (yPosition <= heroHeight) {
+    var effectFactor = yPosition / heroHeight;
+    var rotation = effectFactor * (Math.PI / 2 - Math.asin( (heroHeight - yPosition) / heroHeight ));
+    $('.hero').css({
+      '-webkit-transform': 'rotateX('+rotation+'rad)',
+      'transform': 'rotateX('+rotation+'rad)',
+    })
+    .find('.overlay').css('opacity', effectFactor);
+  }
 
-  // navigation scroll lijepo radi materem
-  $('nav a').click(function(event) {
-      var id = $(this).attr("href");
-      var offset = 70;
-      var target = $(id).offset().top - offset;
-      $('html, body').animate({
-          scrollTop: target
-      }, 500);
-      event.preventDefault();
-  });
 
-  </script>
-
-  <script>
-    /**
-   * CSS conic-gradient() polyfill
-   * By Lea Verou — http://lea.verou.me
-   * MIT license
+  /**
+   * Sticky nav-bar
    */
-
-  (function(){
-
-  var π = Math.PI;
-  var τ = 2 * π;
-  var ε = .00001;
-  var deg = π/180;
-
-  var dummy = document.createElement("div");
-  document.body.appendChild(dummy);
-
-  var _ = self.ConicGradient = function(o) {
-  	var me = this;
-  	_.all.push(this);
-
-  	o = o || {};
-
-  	this.canvas = document.createElement("canvas");
-  	this.context = this.canvas.getContext("2d");
-
-  	this.repeating = !!o.repeating;
-
-  	this.size = o.size || Math.max(innerWidth, innerHeight);
-
-  	this.canvas.width = this.canvas.height = this.size;
-
-  	var stops = o.stops;
-
-  	this.stops = (stops || "").split(/\s*,(?![^(]*\))\s*/); // commas that are not followed by a ) without a ( first
-
-  	this.from = o.from || 0;
-
-  	for (var i=0; i<this.stops.length; i++) {
-  		if (this.stops[i]) {
-  			var stop = this.stops[i] = new _.ColorStop(this, this.stops[i]);
-
-  			if (stop.next) {
-  				this.stops.splice(i+1, 0, stop.next);
-  				i++;
-  			}
-  		}
-  		else {
-  			this.stops.splice(i, 1);
-  			i--;
-  		}
-  	}
-
-  	if (this.stops[0].color.indexOf('from') == 0) {
-  		this.from = this.stops[0].pos*360;
-  		this.stops.shift();
-  	}
-  	// Normalize stops
-
-  	// Add dummy first stop or set first stop’s position to 0 if it doesn’t have one
-  	if (this.stops[0].pos === undefined) {
-  			this.stops[0].pos = 0;
-  		}
-  	else if (this.stops[0].pos > 0) {
-  		var first = this.stops[0].clone();
-  		first.pos = 0;
-  		this.stops.unshift(first);
-  	}
-
-  	// Add dummy last stop or set last stop’s position to 100% if it doesn’t have one
-  	if (this.stops[this.stops.length - 1].pos === undefined) {
-  		this.stops[this.stops.length - 1].pos = 1;
-  	}
-  	else if (!this.repeating && this.stops[this.stops.length - 1].pos < 1) {
-  		var last = this.stops[this.stops.length - 1].clone();
-  		last.pos = 1;
-  		this.stops.push(last);
-  	}
-
-  	this.stops.forEach(function(stop, i){
-  		if (stop.pos === undefined) {
-  			// Evenly space color stops with no position
-  			for (var j=i+1; this[j]; j++) {
-  				if (this[j].pos !== undefined) {
-  					stop.pos = this[i-1].pos + (this[j].pos - this[i-1].pos)/(j-i+1);
-  					break;
-  				}
-  			}
-  		}
-  		else if (i > 0) {
-  			// Normalize color stops whose position is smaller than the position of the stop before them
-  			stop.pos = Math.max(stop.pos, this[i-1].pos);
-  		}
-  	}, this.stops);
-
-  	if (this.repeating) {
-  		// Repeat color stops until >= 1
-  		var stops = this.stops.slice();
-  		var lastStop = stops[stops.length-1];
-  		var difference = lastStop.pos - stops[0].pos;
-
-  		for (var i=0; this.stops[this.stops.length-1].pos < 1 && i<10000; i++) {
-  			for (var j=0; j<stops.length; j++) {
-  				var s = stops[j].clone();
-  				s.pos += (i+1)*difference;
-
-  				this.stops.push(s);
-  			}
-  		}
-  	}
-
-  	this.paint();
-  };
-
-  _.all = [];
-
-  _.prototype = {
-  	toString: function() {
-  		return "url('" + this.dataURL + "')";
-  	},
-
-  	get dataURL() {
-  		// IE/Edge only render data-URI based background-image when the image data
-  		// is escaped.
-  		// Ref: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/7157459/#comment-3
-  		return "data:image/svg+xml," + encodeURIComponent(this.svg);
-  	},
-
-  	get blobURL() {
-  		// Warning: Flicker when updating due to slow blob: URL resolution :(
-  		// TODO cache this and only update it when color stops change
-  		return URL.createObjectURL(new Blob([this.svg], {type: "image/svg+xml"}));
-  	},
-
-  	get svg() {
-  		return '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">' +
-  			'<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">' +
-  			'<image width="100" height="100%" xlink:href="' + this.png + '" /></svg></svg>';
-  	},
-
-  	get png() {
-  		return this.canvas.toDataURL();
-  	},
-
-  	get r() {
-  		return Math.sqrt(2) * this.size / 2;
-  	},
-
-  	// Paint the conical gradient on the canvas
-  	// Algorithm inspired from http://jsdo.it/akm2/yr9B
-  	paint: function() {
-  		var c = this.context;
-
-  		var radius = this.r;
-  		var x = this.size / 2;
-
-  		var stopIndex = 0; // The index of the current color
-  		var stop = this.stops[stopIndex], prevStop;
-
-  		var diff, t;
-
-  		// Transform coordinate system so that angles start from the top left, like in CSS
-  		c.translate(this.size/2, this.size/2);
-  		c.rotate(-90*deg);
-  		c.rotate(this.from*deg);
-  		c.translate(-this.size/2, -this.size/2);
-
-  		for (var i = 0; i < 360;) {
-  			if (i/360 + ε >= stop.pos) {
-  				// Switch color stop
-  				do {
-  					prevStop = stop;
-
-  					stopIndex++;
-  					stop = this.stops[stopIndex];
-  				// Continue while point is behind current position (i)
-  				} while(stop && stop != prevStop && i/360 + ε >= stop.pos);
-
-  				if (!stop) {
-  					break;
-  				}
-
-  				var sameColor = prevStop.color + "" === stop.color + "" && prevStop != stop;
-
-  				diff = prevStop.color.map(function(c, i){
-  					return stop.color[i] - c;
-  				});
-  			}
-
-  			t = (i/360 - prevStop.pos) / (stop.pos - prevStop.pos);
-
-  			var interpolated = sameColor? stop.color : diff.map(function(d,i){
-  				var ret = d * t + prevStop.color[i];
-
-  				return i < 3? ret & 255 : ret;
-  			});
-
-  			// Draw a series of arcs, 1deg each
-  			c.fillStyle = 'rgba(' + interpolated.join(",") + ')';
-  			c.beginPath();
-  			c.moveTo(x, x);
-
-  			if (sameColor) {
-  				var θ = 360 * (stop.pos - prevStop.pos);
-  			}
-  			else {
-  				var θ = .5;
-  			}
-
-  			var beginArg = i*deg;
-  			beginArg = Math.min(360*deg, beginArg);
-
-  			// .02: To prevent empty blank line and corresponding moire
-  			// only non-alpha colors are cared now
-  			var endArg = beginArg + θ*deg;
-  			endArg = Math.min(360*deg, endArg + .02);
-
-  			c.arc(x, x, radius, beginArg, endArg);
-
-  			c.closePath();
-  			c.fill();
-
-  			i += θ;
-  		}
-  	}
-  };
-
-  _.ColorStop = function(gradient, stop) {
-  	this.gradient = gradient;
-
-  	if (stop) {
-  		var parts = stop.match(/^(.+?)(?:\s+([\d.]+)(%|deg|turn|grad|rad)?)?(?:\s+([\d.]+)(%|deg|turn|grad|rad)?)?\s*$/);
-
-  		this.color = _.ColorStop.colorToRGBA(parts[1]);
-
-  		if (parts[2]) {
-  			var unit = parts[3];
-
-  			if (unit == "%" || parts[2] === "0" && !unit) {
-  				this.pos = parts[2]/100;
-  			}
-  			else if (unit == "turn") {
-  				this.pos  = +parts[2];
-  			}
-  			else if (unit == "deg") {
-  				this.pos  = parts[2] / 360;
-  			}
-  			else if (unit == "grad") {
-  				this.pos  = parts[2] / 400;
-  			}
-  			else if (unit == "rad") {
-  				this.pos  = parts[2] / τ;
-  			}
-  		}
-
-  		if (parts[4]) {
-  			this.next = new _.ColorStop(gradient, parts[1] + " " + parts[4] + parts[5]);
-  		}
-  	}
+  if (yPosition <= heroHeight) {
+    $('nav').removeClass('fixed');
+  } else {
+    $('nav').addClass('fixed');
   }
 
-  _.ColorStop.prototype = {
-  	clone: function() {
-  		var ret = new _.ColorStop(this.gradient);
-  		ret.color = this.color;
-  		ret.pos = this.pos;
+});
 
-  		return ret;
-  	},
-
-  	toString: function() {
-  		return "rgba(" + this.color.join(", ") + ") " + this.pos * 100 + "%";
-  	}
-  };
-
-  _.ColorStop.colorToRGBA = function(color) {
-  	if (!Array.isArray(color) && color.indexOf("from") == -1) {
-  		dummy.style.color = color;
-
-  		var rgba = getComputedStyle(dummy).color.match(/rgba?\(([\d.]+), ([\d.]+), ([\d.]+)(?:, ([\d.]+))?\)/);
-
-  		if (rgba) {
-  			rgba.shift();
-  			rgba = rgba.map(function(a) { return +a });
-  			rgba[3] = isNaN(rgba[3])? 1 : rgba[3];
-  		}
-
-  		return rgba || [0,0,0,0];
-  	}
-
-  	return color;
-  };
-
-  })();
-
-  if (self.StyleFix) {
-  	(function(){
-  		function supportedBackgroundImage(checkStyle) {
-  			var dummy = document.createElement("p");
-  			dummy.style.backgroundImage = checkStyle;
-  			dummy.style.backgroundImage = PrefixFree.prefix + checkStyle;
-  			return !!dummy.style.backgroundImage;
-  		}
-
-  		function installGradientFix(gradientExp, fix) {
-  			var match = new RegExp("(?:repeating-)?" + gradientExp + "\\(\\s*((?:\\([^()]+\\)|[^;()}])+?)\\)", "g");
-  			StyleFix.register(function(css, raw) {
-  				return (css.indexOf("-gradient") > -1) ? css.replace(match, fix) : css;
-  			});
-  		}
-
-  		// Emulates conic-gradient in the absence of a native implementation.
-  		function conicGradientFix(gradient, stops) {
-  			return new ConicGradient({
-  				stops: stops,
-  				repeating: gradient.indexOf("repeating-") > -1
-  			});
-  		}
-
-  		// Converts dual-position color stops (CSS Images Module Level 4) if not supported.
-  		function dualPositionFix(gradient, stops) {
-  			var adjustedStops = "";
-  			(stops || "").split(/\s*,(?![^(]*\))\s*/).forEach(function(stop, i) {
-  				if (!stop) return;
-
-  				adjustedStops += (adjustedStops != "") ? ", " : "";
-
-  				var parts = stop.split(/ /);
-  				if (parts.length === 3) {
-  					// When the color stop has 3 components, assume it uses dual-positioning and convert:
-  					//     "color pos0 pos1" -> "color pos0, color pos1"
-  					adjustedStops += parts[0] + " " + parts[1] + ", " + parts[0] + " " + parts[2];
-  				}
-  				else {
-  					adjustedStops += stop;
-  				}
-  			});
-
-  			return gradient.replace(stops, adjustedStops);
-  		}
-
-  		// First see if we need need a polyfill for dual-position color stops.
-  		if (!supportedBackgroundImage("linear-gradient(white 0% 50%, black 50% 100%)"))
-  			installGradientFix("(?:linear|radial|conic)-gradient", dualPositionFix);
-
-  		// Then check whether we need to polyfill conic-gradient.
-  		if (!supportedBackgroundImage("conic-gradient(white, black)"))
-  			installGradientFix("conic-gradient", conicGradientFix);
-  	})();
-  }
-  </script>
-
-
+</script>
 
 
 </head>
