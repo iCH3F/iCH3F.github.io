@@ -1,129 +1,59 @@
-
-
 <html>
 <head>
-<title>iCH3F's iOS Repo</title>
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+
+<title>iCH3F's Release Pages</title>
+
 <link rel="icon"
       type="image/png"
-      href="Images/Favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=0.7">
-<style type="text/css">
-		body {
-			background: #007180; /* Old browsers */
-			background: -moz-linear-gradient(top,  #007180 0%, #cbddc8 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007180), color-stop(100%,#cbddc8)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #007180 0%,#cbddc8 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  #007180 0%,#cbddc8 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007180', endColorstr='#cbddc8',GradientType=0 ); /* IE6-9 */
-			font-family: "Quicksand";
-      src: url(https://iCH3F.github.io/Fonts/quicksand-regular-webfont.woff);
-			/*text-shadow: 1px 1px rgba(0,0,0,0.5);*/
-			overflow:auto;
-		}
-		h1 {
-			font-weight: normal;
-      font-family: Quicksand;
-		}
-		h3 {
-			font-weight: normal;
-      font-family: Quicksand;
-		}
-		h4 {
-			font-weight: normal;
-		}
-		a {
-			text-decoration: none;
-		}
-		.bg-img {
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			top:0px;
-			left:0px;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: 50% 50%;
-		}
-		.blur {
-			-webkit-filter: blur(5px);
-			-moz-filter: blur(5px);
-			-o-filter: blur(5px);
-			-ms-filter: blur(5px);
-			filter: blur(5px);
-		}
-		.overlay {
-			background-color: rgba(0, 0, 0, 0.3);
-		}
-		</style>
+      href="https://iCH3F.github.io/Images/NewFavicon.png">
 
-    <style>
-    /* quicksand-regular - latin */
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=0.65">
 
-    <style>
+<style>
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #182028
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */
+}
+h1 {
+  font-weight: normal;
+  font-family: Quicksand;
+  font-size: 12px;
+}
+h3 {
+  font-weight: normal;
+  font-family: Quicksand;
+  font-size: 10px;
+}
+h4 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 275px;
-  height: 233px;
-  perspective: 1000px;
-  display: inline-block;
-  border-radius: 25px;
-
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #DDDDDD;
-  color: #333333;
-  transform: rotateY(180deg);
-}
 </style>
 
-		<style>
+<style>
+
+@font-face {
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot'); /* IE9 Compat Modes */
+src: url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('https://iCH3F.github.io/Fonts/quicksand-v20-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+</style>
+
+<style>
+
 .button {
   background-color: #333333;
   border: none;
@@ -140,651 +70,743 @@ body {
 }
 
 .button:hover {opacity: 1}
+
 </style>
 
 <style>
-body {
-  margin: 0;
-  font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  background-image: url("Images/HeaderBG.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
+  .main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 100px;
+  z-index: 999;
   width: 100%;
-  height: 52px;
-  z-index: 52;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 0px;
+  }
 }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0px 0px 0px 0px;
-  text-decoration: none;
-  font-size: 22px;
+.open-nav {
+  max-height: 400px !important;
 }
-
-
-#navbar a.active {
-  background-color: #888888;
-  color: white;
-  height:  100%;
-}
-
-.content {
-  padding: 50px;
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 0px solid gainsboro;
 }
 
-.sticky + .content {
-  padding-top: 30px;
+.logo {
+  width: 50px;
+  font-size: 5px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 5;
+  line-height: 1;
+  margin-bottom: -50px;
 }
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: middle;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 0px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  margin: -1;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: #182028;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.content {
+  padding: 0px 2% 250px;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://iCH3F.github.io/Images/Home-Wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.hero h1 span {
+  font-size: 25px;
+  color: #e8f380;
+  border-bottom: 2px solid #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #e8f380;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+}
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #e8f380;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
 </style>
 
-<script type="3ad1e01cdd4f119297987e54-text/javascript">
-		function swapBG(){
-			document.getElementById("bg-img").style.display="block";
-			document.getElementById("bg-img").style.backgroundImage="url('Images/Home-Wallpaper.jpg')";
-			document.getElementById("bg-overlay").style.display="block";
-			document.getElementById("ios").style.color="rgb(0,200,64)";
-			document.getElementById("chrome").style.color="rgb(255,91,0)";
-			document.body.style.color = "white";
-		}
-		function swapForURL(){
-			document.getElementById("logo").src="Images/Logo.png";
-			document.getElementById("logo").style.borderRadius="50px";
-			document.getElementById("bg-img").style.display="block";
-			document.getElementById("bg-img").style.backgroundImage="url('Images/Home-Wallpaper.jpg')";
-			document.getElementById("bg-overlay").style.display="block";
-			document.getElementById("ios").style.color="rgb(0,200,64)";
-			document.getElementById("chrome").style.color="rgb(255,91,0)";
-			document.body.style.color = "white";
-		}
-		function getLocation(href) {
-			var match = href.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/);
-			return match && {
-				protocol: match[1],
-				host: match[2],
-				hostname: match[3],
-				port: match[4],
-				pathname: match[5],
-				search: match[6],
-				hash: match[7]
-			}
-		}
-		</script>
-</head>
-<body scroll="yes">
-<div id="bg-img" class="bg-img blur" style="display: none;"></div>
-<div id="bg-overlay" class="bg-img overlay" style="display: none;"></div>
-<div style="width: 100%; height: 100%;display: table;text-align: center;">
-<div style="position:relative;width:700px;height:500px;display: table-cell;vertical-align: middle; top: 0%;">
-<div class="header">
-    <h3><a href="https://ich3f.github.io" id="logo"><img src="Images/Logo.png" id='LogoMenu' width="350"></a></h3>
+<body scroll="yes" onload="document.body.style.opacity='1'">
 
-  </div>
-  <div id="navbar">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
 
-    <button class="button"><a style="position: absolute; left:  59px" href="https://twitter.com/iCH3F"><img src="https://ich3f.github.io/iOS/Images/TwitterBare.png" height="33"></a></button>
-    <button class="button"><a style="position: absolute; left:  106px" href="https://www.reddit.com/user/iCH3F"><img src="https://ich3f.github.io/iOS/Images/RedditBare.png" height="33"></a></button>
-    <button class="button"><a style="position: absolute; left:  12px" href="javascript:void(0)"><img src="https://ich3f.github.io/iOS/Images/EmailBare.png" height="35"></a></button>
-    <button class="button"><a style="position: absolute; right:  236px" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToCydia.png" width="102"></a></button>
-    <button class="button"><a style="position: absolute; right: 124px" href="zbra://sources/add/https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToZebra.png" width="102"></a></button>
-    <button class="button"><a style="position: absolute; right:  12px" href="sileo://source/https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToSileo.png" width="102"></a></button>
+<header class="main_h">
 
-  </div>
+      <div class="row">
+          <a class="logo" href="https://iCH3F.github.io"><img src="https://iCH3F.github.io/Images/NewFavicon.png" width="45"></a>
 
-<p>
-  &nbsp;&nbsp;
-  <p>
-    &nbsp;&nbsp;
-    <p>
-      &nbsp;&nbsp;
-      <p>
-<img id="logo" src="Images/ProjectsBanner.png" width="200">
-<p>
-  &nbsp;&nbsp;
-  <p>
-    &nbsp;&nbsp;
-    <p>
-      &nbsp;&nbsp;
-      <p>
-        <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
+          <div class="mobile-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
           </div>
-          <div class="flip-card-back">
-            <h1>Test Package</h1>
-            <p>v1.0.1</p>
+
+          <nav>
+              <ul>
+                <li><button class="button"><a style="position: absolute; right:  236px" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToCydia-Dark.png" width="102"></a></button></li>
+                <li><button class="button"><a style="position: absolute; right: 124px" href="zbra://sources/add/https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToZebra-Dark.png" width="102"></a></button></li>
+                <li><button class="button"><a style="position: absolute; right:  12px" href="sileo://source/https://iCH3F.github.io/iOS/"><img src="https://ich3f.github.io/Images/AddToSileo-Dark.png" width="102"></a></button></li>
+              </ul>
+          </nav>
+
+      </div>
+
+</header>
+
+<div class="hero">
+
+<img src="https://iCH3F.github.io/Images/NewLogo-Alt3.png" width= "450">
+
+</div>
+
+  &nbsp;&nbsp;
+      <p>
+<h1 align=center><font colour=#000 size=16px>PROJECTS</font></h1>
+<p>
+  &nbsp;&nbsp;
+  <p>
+    &nbsp;&nbsp;
+    <p>
+      Test
+      <p>
+        Test
+        <p>
+          Test
+          <p>
+            Test
             <p>
-              &nbsp;&nbsp;
+              Test
               <p>
-            <h3>Customize Lorem Ipsum Test Package Description</h3>
-            <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-            <p><i>by iCH3F</i></p>
-            <p>
-        <img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-        <button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-        <button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-        <a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-            </p>
-          </div>
-        </div>
-        </div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-<p>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Test Package</h1>
-      <p>v1.0.1</p>
-      <p>
-        &nbsp;&nbsp;
-        <p>
-      <h3>Customize Lorem Ipsum Test Package Description</h3>
-      <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-      <p><i>by iCH3F</i></p>
-      <p>
-  <img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-  <button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-  <button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-  <a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-      </p>
-    </div>
-  </div>
-  </div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-<p>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Test Package</h1>
-      <p>v1.0.1</p>
-      <p>
-        &nbsp;&nbsp;
-        <p>
-      <h3>Customize Lorem Ipsum Test Package Description</h3>
-      <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-      <p><i>by iCH3F</i></p>
-      <p>
-  <img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-  <button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-  <button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-  <a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-      </p>
-    </div>
-  </div>
-  </div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-<p>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Test Package</h1>
-      <p>v1.0.1</p>
-      <p>
-        &nbsp;&nbsp;
-        <p>
-      <h3>Customize Lorem Ipsum Test Package Description</h3>
-      <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-      <p><i>by iCH3F</i></p>
-      <p>
-  <img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-  <button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-  <button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-  <a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-      </p>
-    </div>
-  </div>
-  </div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-<p>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Test Package</h1>
-      <p>v1.0.1</p>
-      <p>
-        &nbsp;&nbsp;
-        <p>
-      <h3>Customize Lorem Ipsum Test Package Description</h3>
-      <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-      <p><i>by iCH3F</i></p>
-      <p>
-  <img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-  <button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-  <button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-  <a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-      </p>
-    </div>
-  </div>
-  </div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-&nbsp;&nbsp;
-<div class="flip-card">
-<div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img src="Images/ComingSoon-Card.png" alt="Avatar" style="width:275px;height:233px;">
-  </div>
-  <div class="flip-card-back">
-    <h1>Test Package</h1>
-    <p>v1.0.1</p>
-    <p>
-      &nbsp;&nbsp;
-      <p>
-    <h3>Customize Lorem Ipsum Test Package Description</h3>
-    <p><font color="green">✓ Compatible with iOS 11, 12 & 13</font></p>
-    <p><i>by iCH3F</i></p>
-    <p>
-<img id="logo" src="Images/Sample-Icon.png" style="position: fixed; left: 10px; top: 10px" width="48">
-<button class="button"><a href="https://github.com/iCH3F/"><img id="logo" src="Images/Github.png" style="position: fixed; right: 15px; bottom: 10px" width="25"></a></button>
-<button class="button"><a href="https://iCH3F.github.io/iOS/"><img id="logo" src="Images/DownloadButton.png" style="position: fixed; left: 15px; bottom: 10px" width="25"></a></button>
-<a href="https://iCH3F.github.io"><img id="logo" src="Images/Expand.png" style="position: fixed; left: 120px; bottom: 10px" width="25"></a>
-    </p>
-  </div>
-</div>
-</div>
-<p>
-  <p>
-    &nbsp;&nbsp;
-    <p>
-      &nbsp;&nbsp;
-      <p>
-        &nbsp;&nbsp;
-        <p>
+                Test
+                <p>
+                  Test
+                  <p>
+                    Test
+                    <p>
+                      Test
+                      <p>
+                        Test
+                        <p>
+                          Test
+                          <p>
+                            Test
+                            <p>
+                              Test
+                              <p>
+                                Test
+                                <p>
+                                  Test
+                                  <p>
+                                    Test
+                                    <p>
+
+
+
+
+</body>
+
+<div style="font-family:Quicksand; position: fixed; right: 5px; bottom: 5px"><font size="1" color="grey">
+
+<i>&copy; 2020 iCH3F.  All Rights Reserved.</i>
 
 </div>
+
+<div style="font-family:Quicksand; position: fixed; left: 5px; bottom: 5px"><font size="1" color="grey">
+
+<i>BTC: 3GCKaQg3tC3wXm1gpsbA8mvfU5bVUXoeJg</i>
+
 </div>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3ad1e01cdd4f119297987e54-|49" defer=""></script></body>
-<script type="3ad1e01cdd4f119297987e54-text/javascript">
-		var urlObj = getLocation(document.documentURI);
-		if (urlObj.host.toLowerCase().indexOf("iCH3F.com") >= 0)
-			swapForURL();
-		else
-			swapBG();
-	</script>
+
+<script>
+  // Sticky Header
+  $(window).scroll(function() {
+
+      if ($(window).scrollTop() > 100) {
+          $('.main_h').addClass('sticky');
+      } else {
+          $('.main_h').removeClass('sticky');
+      }
+  });
+
+  // Mobile Navigation
+  $('.mobile-toggle').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+          $('.main_h').removeClass('open-nav');
+      } else {
+          $('.main_h').addClass('open-nav');
+      }
+  });
+
+  $('.main_h li a').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+          $('.navigation').removeClass('open-nav');
+          $('.main_h').removeClass('open-nav');
+      }
+  });
+
+  // navigation scroll lijepo radi materem
+  $('nav a').click(function(event) {
+      var id = $(this).attr("href");
+      var offset = 70;
+      var target = $(id).offset().top - offset;
+      $('html, body').animate({
+          scrollTop: target
+      }, 500);
+      event.preventDefault();
+  });
+
+  </script>
 
   <script>
-  window.onscroll = function() {myFunction()};
+    /**
+   * CSS conic-gradient() polyfill
+   * By Lea Verou — http://lea.verou.me
+   * MIT license
+   */
 
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
+  (function(){
 
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
+  var π = Math.PI;
+  var τ = 2 * π;
+  var ε = .00001;
+  var deg = π/180;
+
+  var dummy = document.createElement("div");
+  document.body.appendChild(dummy);
+
+  var _ = self.ConicGradient = function(o) {
+  	var me = this;
+  	_.all.push(this);
+
+  	o = o || {};
+
+  	this.canvas = document.createElement("canvas");
+  	this.context = this.canvas.getContext("2d");
+
+  	this.repeating = !!o.repeating;
+
+  	this.size = o.size || Math.max(innerWidth, innerHeight);
+
+  	this.canvas.width = this.canvas.height = this.size;
+
+  	var stops = o.stops;
+
+  	this.stops = (stops || "").split(/\s*,(?![^(]*\))\s*/); // commas that are not followed by a ) without a ( first
+
+  	this.from = o.from || 0;
+
+  	for (var i=0; i<this.stops.length; i++) {
+  		if (this.stops[i]) {
+  			var stop = this.stops[i] = new _.ColorStop(this, this.stops[i]);
+
+  			if (stop.next) {
+  				this.stops.splice(i+1, 0, stop.next);
+  				i++;
+  			}
+  		}
+  		else {
+  			this.stops.splice(i, 1);
+  			i--;
+  		}
+  	}
+
+  	if (this.stops[0].color.indexOf('from') == 0) {
+  		this.from = this.stops[0].pos*360;
+  		this.stops.shift();
+  	}
+  	// Normalize stops
+
+  	// Add dummy first stop or set first stop’s position to 0 if it doesn’t have one
+  	if (this.stops[0].pos === undefined) {
+  			this.stops[0].pos = 0;
+  		}
+  	else if (this.stops[0].pos > 0) {
+  		var first = this.stops[0].clone();
+  		first.pos = 0;
+  		this.stops.unshift(first);
+  	}
+
+  	// Add dummy last stop or set last stop’s position to 100% if it doesn’t have one
+  	if (this.stops[this.stops.length - 1].pos === undefined) {
+  		this.stops[this.stops.length - 1].pos = 1;
+  	}
+  	else if (!this.repeating && this.stops[this.stops.length - 1].pos < 1) {
+  		var last = this.stops[this.stops.length - 1].clone();
+  		last.pos = 1;
+  		this.stops.push(last);
+  	}
+
+  	this.stops.forEach(function(stop, i){
+  		if (stop.pos === undefined) {
+  			// Evenly space color stops with no position
+  			for (var j=i+1; this[j]; j++) {
+  				if (this[j].pos !== undefined) {
+  					stop.pos = this[i-1].pos + (this[j].pos - this[i-1].pos)/(j-i+1);
+  					break;
+  				}
+  			}
+  		}
+  		else if (i > 0) {
+  			// Normalize color stops whose position is smaller than the position of the stop before them
+  			stop.pos = Math.max(stop.pos, this[i-1].pos);
+  		}
+  	}, this.stops);
+
+  	if (this.repeating) {
+  		// Repeat color stops until >= 1
+  		var stops = this.stops.slice();
+  		var lastStop = stops[stops.length-1];
+  		var difference = lastStop.pos - stops[0].pos;
+
+  		for (var i=0; this.stops[this.stops.length-1].pos < 1 && i<10000; i++) {
+  			for (var j=0; j<stops.length; j++) {
+  				var s = stops[j].clone();
+  				s.pos += (i+1)*difference;
+
+  				this.stops.push(s);
+  			}
+  		}
+  	}
+
+  	this.paint();
+  };
+
+  _.all = [];
+
+  _.prototype = {
+  	toString: function() {
+  		return "url('" + this.dataURL + "')";
+  	},
+
+  	get dataURL() {
+  		// IE/Edge only render data-URI based background-image when the image data
+  		// is escaped.
+  		// Ref: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/7157459/#comment-3
+  		return "data:image/svg+xml," + encodeURIComponent(this.svg);
+  	},
+
+  	get blobURL() {
+  		// Warning: Flicker when updating due to slow blob: URL resolution :(
+  		// TODO cache this and only update it when color stops change
+  		return URL.createObjectURL(new Blob([this.svg], {type: "image/svg+xml"}));
+  	},
+
+  	get svg() {
+  		return '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">' +
+  			'<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">' +
+  			'<image width="100" height="100%" xlink:href="' + this.png + '" /></svg></svg>';
+  	},
+
+  	get png() {
+  		return this.canvas.toDataURL();
+  	},
+
+  	get r() {
+  		return Math.sqrt(2) * this.size / 2;
+  	},
+
+  	// Paint the conical gradient on the canvas
+  	// Algorithm inspired from http://jsdo.it/akm2/yr9B
+  	paint: function() {
+  		var c = this.context;
+
+  		var radius = this.r;
+  		var x = this.size / 2;
+
+  		var stopIndex = 0; // The index of the current color
+  		var stop = this.stops[stopIndex], prevStop;
+
+  		var diff, t;
+
+  		// Transform coordinate system so that angles start from the top left, like in CSS
+  		c.translate(this.size/2, this.size/2);
+  		c.rotate(-90*deg);
+  		c.rotate(this.from*deg);
+  		c.translate(-this.size/2, -this.size/2);
+
+  		for (var i = 0; i < 360;) {
+  			if (i/360 + ε >= stop.pos) {
+  				// Switch color stop
+  				do {
+  					prevStop = stop;
+
+  					stopIndex++;
+  					stop = this.stops[stopIndex];
+  				// Continue while point is behind current position (i)
+  				} while(stop && stop != prevStop && i/360 + ε >= stop.pos);
+
+  				if (!stop) {
+  					break;
+  				}
+
+  				var sameColor = prevStop.color + "" === stop.color + "" && prevStop != stop;
+
+  				diff = prevStop.color.map(function(c, i){
+  					return stop.color[i] - c;
+  				});
+  			}
+
+  			t = (i/360 - prevStop.pos) / (stop.pos - prevStop.pos);
+
+  			var interpolated = sameColor? stop.color : diff.map(function(d,i){
+  				var ret = d * t + prevStop.color[i];
+
+  				return i < 3? ret & 255 : ret;
+  			});
+
+  			// Draw a series of arcs, 1deg each
+  			c.fillStyle = 'rgba(' + interpolated.join(",") + ')';
+  			c.beginPath();
+  			c.moveTo(x, x);
+
+  			if (sameColor) {
+  				var θ = 360 * (stop.pos - prevStop.pos);
+  			}
+  			else {
+  				var θ = .5;
+  			}
+
+  			var beginArg = i*deg;
+  			beginArg = Math.min(360*deg, beginArg);
+
+  			// .02: To prevent empty blank line and corresponding moire
+  			// only non-alpha colors are cared now
+  			var endArg = beginArg + θ*deg;
+  			endArg = Math.min(360*deg, endArg + .02);
+
+  			c.arc(x, x, radius, beginArg, endArg);
+
+  			c.closePath();
+  			c.fill();
+
+  			i += θ;
+  		}
+  	}
+  };
+
+  _.ColorStop = function(gradient, stop) {
+  	this.gradient = gradient;
+
+  	if (stop) {
+  		var parts = stop.match(/^(.+?)(?:\s+([\d.]+)(%|deg|turn|grad|rad)?)?(?:\s+([\d.]+)(%|deg|turn|grad|rad)?)?\s*$/);
+
+  		this.color = _.ColorStop.colorToRGBA(parts[1]);
+
+  		if (parts[2]) {
+  			var unit = parts[3];
+
+  			if (unit == "%" || parts[2] === "0" && !unit) {
+  				this.pos = parts[2]/100;
+  			}
+  			else if (unit == "turn") {
+  				this.pos  = +parts[2];
+  			}
+  			else if (unit == "deg") {
+  				this.pos  = parts[2] / 360;
+  			}
+  			else if (unit == "grad") {
+  				this.pos  = parts[2] / 400;
+  			}
+  			else if (unit == "rad") {
+  				this.pos  = parts[2] / τ;
+  			}
+  		}
+
+  		if (parts[4]) {
+  			this.next = new _.ColorStop(gradient, parts[1] + " " + parts[4] + parts[5]);
+  		}
+  	}
+  }
+
+  _.ColorStop.prototype = {
+  	clone: function() {
+  		var ret = new _.ColorStop(this.gradient);
+  		ret.color = this.color;
+  		ret.pos = this.pos;
+
+  		return ret;
+  	},
+
+  	toString: function() {
+  		return "rgba(" + this.color.join(", ") + ") " + this.pos * 100 + "%";
+  	}
+  };
+
+  _.ColorStop.colorToRGBA = function(color) {
+  	if (!Array.isArray(color) && color.indexOf("from") == -1) {
+  		dummy.style.color = color;
+
+  		var rgba = getComputedStyle(dummy).color.match(/rgba?\(([\d.]+), ([\d.]+), ([\d.]+)(?:, ([\d.]+))?\)/);
+
+  		if (rgba) {
+  			rgba.shift();
+  			rgba = rgba.map(function(a) { return +a });
+  			rgba[3] = isNaN(rgba[3])? 1 : rgba[3];
+  		}
+
+  		return rgba || [0,0,0,0];
+  	}
+
+  	return color;
+  };
+
+  })();
+
+  if (self.StyleFix) {
+  	(function(){
+  		function supportedBackgroundImage(checkStyle) {
+  			var dummy = document.createElement("p");
+  			dummy.style.backgroundImage = checkStyle;
+  			dummy.style.backgroundImage = PrefixFree.prefix + checkStyle;
+  			return !!dummy.style.backgroundImage;
+  		}
+
+  		function installGradientFix(gradientExp, fix) {
+  			var match = new RegExp("(?:repeating-)?" + gradientExp + "\\(\\s*((?:\\([^()]+\\)|[^;()}])+?)\\)", "g");
+  			StyleFix.register(function(css, raw) {
+  				return (css.indexOf("-gradient") > -1) ? css.replace(match, fix) : css;
+  			});
+  		}
+
+  		// Emulates conic-gradient in the absence of a native implementation.
+  		function conicGradientFix(gradient, stops) {
+  			return new ConicGradient({
+  				stops: stops,
+  				repeating: gradient.indexOf("repeating-") > -1
+  			});
+  		}
+
+  		// Converts dual-position color stops (CSS Images Module Level 4) if not supported.
+  		function dualPositionFix(gradient, stops) {
+  			var adjustedStops = "";
+  			(stops || "").split(/\s*,(?![^(]*\))\s*/).forEach(function(stop, i) {
+  				if (!stop) return;
+
+  				adjustedStops += (adjustedStops != "") ? ", " : "";
+
+  				var parts = stop.split(/ /);
+  				if (parts.length === 3) {
+  					// When the color stop has 3 components, assume it uses dual-positioning and convert:
+  					//     "color pos0 pos1" -> "color pos0, color pos1"
+  					adjustedStops += parts[0] + " " + parts[1] + ", " + parts[0] + " " + parts[2];
+  				}
+  				else {
+  					adjustedStops += stop;
+  				}
+  			});
+
+  			return gradient.replace(stops, adjustedStops);
+  		}
+
+  		// First see if we need need a polyfill for dual-position color stops.
+  		if (!supportedBackgroundImage("linear-gradient(white 0% 50%, black 50% 100%)"))
+  			installGradientFix("(?:linear|radial|conic)-gradient", dualPositionFix);
+
+  		// Then check whether we need to polyfill conic-gradient.
+  		if (!supportedBackgroundImage("conic-gradient(white, black)"))
+  			installGradientFix("conic-gradient", conicGradientFix);
+  	})();
   }
   </script>
 
 
 
-	<div style="position: fixed; right: 5px; bottom: 5px"><font size="1" color="grey"><i>&copy; 2020 iCH3F.  All Rights Reserved.</i>
-    </div>
 
-  <div style="position: fixed; left: 5px; bottom: 5px"><font size="1" color="grey"><i>BTC: 3GCKaQg3tC3wXm1gpsbA8mvfU5bVUXoeJg</i>
-    </div>
+</head>
 </html>
